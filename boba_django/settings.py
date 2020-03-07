@@ -38,8 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'boba',
-    'corsheaders',
     'rest_framework',
+    'corsheaders'
 ]
 
 REST_FRAMEWORK = {
