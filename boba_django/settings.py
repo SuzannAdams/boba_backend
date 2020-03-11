@@ -41,7 +41,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'boba',
     'rest_framework',
-    'corsheaders'
+    'corsheaders',
+    'storages'
 ]
 
 REST_FRAMEWORK = {
@@ -138,5 +139,11 @@ ALLOWED_HOSTS = ['*']
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = '/static/'
+# AWS S3 file upload required settings
+MEDIA_URL =  '/media/'
+MEDIA_ROOT =  os.path.join(BASE_DIR, 'picture/')
+AWS_STORAGE_BUCKET_NAME = 'bobahour'
+# Set the default storage to use s3
+DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
 
 django_heroku.settings(locals())
