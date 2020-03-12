@@ -5,6 +5,7 @@ class Meet(models.Model):
     name = models.CharField(max_length=100)
     place = models.CharField(max_length=100)
     address = models.CharField(max_length=100)
+    date = models.CharField(max_length=100)
     time = models.CharField(max_length=100)
     topic = models.CharField(max_length=100)
     photo_url = models.TextField()
