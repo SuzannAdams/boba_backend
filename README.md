@@ -1,5 +1,8 @@
 # Website:
 
+https://github.com/SuzannAdams/boba_backend
+https://bobahour-app.herokuapp.com/
+
 ## Description:
 
 Boba Hour is a website for boba or bubble tea drinkers who are interested in meeting other people while enjoying an Asian style, cool beverage. This site invites visitors to post their tea cafe location with the intention of having another visitor respond by traveling to the posted locale. The hope is to have an amicable conversation, socialize or possibly make a new friend.
@@ -12,19 +15,30 @@ Boba Hour is a website for boba or bubble tea drinkers who are interested in mee
 
 ## Technologies Used:
 
-The technologies used for Boba Hour is Python, AWS and Django with Django REST Framework for API.
+The technologies used for Boba Hour is Python, CORS, Heroku, AWS and Django with Django REST Framework for API. The dependencies used are:
+django
+psycopg2-binary
+django-cors-headers
+gunicorn
+whitenoise
+dj-database-url
+django-heroku
+python-decouple
+djangorestframework
+boto3
+django-storages
 
 ## Getting Started/Installation:
 
-This application can be used by pulling it up on GitHub, forking it to your personal repository, then cloning and copying it into your terminal. The next step is to run npm install to install the required dependencies, then npm run start on your terminal to run the application in the browser. Then click onto the website and enjoy, otherwise you can also pull it up on Heroku.
+This application can be used by pulling it up on GitHub, forking it to your personal repository, then cloning and copying it into your terminal. The next step is to create a virtual environment by typing pipenv shell then you must install the dependencies to run the application. On your terminal to run the application in the browser, you type python3 manage.py migrate then python3 manage.py runserver. Then click into the website and enjoy, otherwise you can also pull it up on Heroku.
 
 ## Contribution Guidelines:
 
-Contributors can open an issue on this repository at https://github.com/SuzannAdams/boba_frontend if there are suggestions to improve this application.
+Contributors can open an issue on this repository at https://github.com/SuzannAdams/boba_backend if there are suggestions to improve this application.
 
 ## Problems & Difficulties:
 
-1. It was difficult to deploy the Django API to Heroku
+1. It was difficult to deploy the Django API to Heroku.
 2. Setting up the application to accept uploaded images was also a challenge.
 3. The CSS styling used create the desired look took some research and consultation from peers.
 
